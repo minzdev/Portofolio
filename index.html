@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Suparman</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- CDN email js  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="/src/js/contact.js" defer></script>
+    
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container"> 
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-4xl text-primary block py-6">Suparman</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <!-- BUTTON -->
+                    <button id="humburger" name="humburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="humburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="humburger-line transition duration-300 ease-in-out"></span>
+                        <span class="humburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <!-- NAV MENU HAMBURGER -->
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex ">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                            </li>
+                           
+                            <li class="group">
+                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#certifikat" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Certifikat</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Halo Semua 👋, Saya  <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Suparman</span></h1>
+                    <h2 class="font-medium text-slate-600 text-lg mb-4 mt-2 whitespace-nowrap">Junior Web Developer | Finance</h2>
+                    <p class="font-medium text-slate-400 mb-7">"Reset pikiranmu, restart semangatmu, dan refocus tujuanmu—karena setiap hari adalah peluang baru untuk melangkah lebih dekat ke impianmu."</p>
+
+            
+                    <a href="#contact" class="text-base font-semibold text-white  bg-primary 
+                         py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition 
+                         duration-300 ease-in-out">Hubungi Saya
+                    </a>
+
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-0 lg:right-0">
+                        <img src="/src/img/fotoprofil.png" alt="Suparman" class="max-w-full mx-auto">
+                        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2" >
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#0d9488" d="M43.5,-46.1C55.9,-41.4,65.1,-27.3,70.1,-10.6C75.1,6,75.8,25.1,67.4,38.3C59,51.5,41.5,58.7,23.3,66.5C5,74.2,-14,82.4,-26.8,76.5C-39.7,70.6,-46.4,50.6,-56.5,32.8C-66.6,14.9,-80,-0.8,-75.5,-11.1C-71.1,-21.4,-48.6,-26.3,-33.1,-30.4C-17.5,-34.6,-8.7,-37.9,3.4,-41.9C15.5,-46,31.1,-50.8,43.5,-46.1Z" transform="translate(100 100)" />
+                              </svg>
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang  Saya</h4>
+                    <h2 class="font-bold text-dark text-2xl mb-5 max-w-md lg:text-4xl">Senang Belajar Hal Baru</h2>
+                    <p class="font-medium text-base text-slate-500 lg:text-lg text text-justify">"Saya memiliki antusiasme yang tinggi terhadap proses pembelajaran, terutama ketika mempelajari hal-hal baru. Bagi saya, setiap pengetahuan yang diperoleh adalah sebuah kesempatan untuk memperluas wawasan dan meningkatkan kualitas diri. Meskipun terkadang tantangan yang dihadapi cukup kompleks, saya selalu memandangnya sebagai peluang untuk berkembang lebih baik. Belajar hal baru tidak hanya memberikan tambahan kemampuan, tetapi juga memperkaya perspektif dan membangun semangat untuk terus berinovasi serta berkontribusi secara positif dalam berbagai bidang kehidupan."</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 ">
+                    <h3 class="font-semibold text-dark text-2xl mb-2 lg:text-3xl lg:pt-10">Mari Berteman</h3>
+                    <p class="font-medium text-base text-slate-500 mb-6 lg:text-lg text-justify">"Mari berteman dan membangun relasi yang bermanfaat! Saya selalu terbuka untuk berdiskusi, berbagi pengalaman, serta berkolaborasi dalam berbagai bidang. Dengan menjalin koneksi, kita bisa saling mendukung, bertukar wawasan, dan tumbuh bersama. Jangan ragu untuk menghubungi saya—siapa tahu, kita bisa menciptakan peluang baru yang luar biasa!"</p>
+                    <div class="flex items-center">
+                        <!-- You Tube -->
+                        <a href="https://www.youtube.com/@GenZetDev" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/parmanman_/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                        <!-- Tik Tok -->
+                        <a href="https://www.tiktok.com/@genzdev" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="20" class="fill-current"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 449.45 515.38"><title>Tik-Tok</title><path fill-rule="nonzero" d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"/></svg>
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Anout Section End -->
+
+    <!-- Portofolio Section Start -->
+    <section id="Portofolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-l-xl mx-auto text-center mb-16 sm:text-4xl lg:text-5xl">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">Project Terbaru</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">Saya percaya bahwa setiap langkah dalam proses ini adalah peluang untuk belajar dan berkembang</p>
+                                    
+                </div>
+
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/arsip1.png" alt="arsip" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web E-Arsip</h3>
+                    <p class="font-medium text-base text-slate-500 text-justify">"E-Arsip adalah solusi digital untuk pengelolaan dokumen yang lebih efisien, aman, dan terorganisir. Dengan sistem ini, pencarian, penyimpanan, dan pengarsipan dokumen menjadi lebih mudah, membantu meningkatkan produktivitas dan mengurangi risiko kehilangan data."</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/managementlistrik.png" alt="arsip" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Management Pembayaran Listrik</h3>
+                    <p class="font-medium text-base text-slate-500 text-justify">"Sistem Manajemen Pencatatan Listrik Prabayar memudahkan monitoring penggunaan listrik dengan pencatatan yang akurat dan terstruktur. Dengan sistem ini, pengguna dapat melacak konsumsi listrik, mengelola saldo token, dan menganalisis penggunaan energi secara efisien, sehingga membantu mengoptimalkan pengeluaran dan menghindari kehabisan daya secara tiba-tiba."</p>
+                </div>
+                <!-- SOON  -->
+                <!-- <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/arsip1.png" alt="arsip" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web E-Arsip</h3>
+                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores vel fugit possimus itaque eius assumenda, ex at mollitia dicta omnis?</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/arsip1.png" alt="arsip" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web E-Arsip</h3>
+                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores vel fugit possimus itaque eius assumenda, ex at mollitia dicta omnis?</p>
+                </div> -->
+            </div>
+        </div>
+
+    </section>
+    <!-- Portofolio Section End -->
+
+    <!-- blog section star -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-l-xl mx-auto text-center mb-16 sm:text-4xl lg:text-5xl">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">Tulisan Terkini</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg text-center">"Dunia teknologi informasi terus berkembang pesat dengan inovasi seperti kecerdasan buatan (AI), komputasi awan, dan keamanan siber yang semakin canggih."</p>                    
+                </div>
+            </div>
+            <!-- Blog 1 -->
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="card bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/proramming.jpg" alt="programming" width="360px" height="200px" class="w-full">
+                        <div class="py-7 px-6">
+                            <h3 class="pb-4">
+                                <a href="blogpage.html" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips programming</a>
+                            </h3>
+                            <p class="font-medium text-base mb-4 text-justify">"Di blog ini, saya berbagi tips, trik, dan best practice dalam dunia pemrograman, mulai dari dasar hingga teknik lanjutan. Temukan cara menulis kode yang bersih, mengatasi bug dengan efektif, serta mengoptimalkan performa aplikasi. Mari belajar dan berkembang bersama!"</p>
+                            
+                            <a href="blogpage.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 ">Baca Selengkapnya</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/network.jpg" alt="networking" width="360px" height="200px" class="w-full">
+                        <div class="py-7 px-6">
+                            <h3 class="pb-4">
+                                <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Network Computer</a>
+                            </h3>
+                            <p class="font-medium text-base mb-4 text-justify">Mengenal Jaringan Komputer: Dasar-Dasar dan Manfaatnya dalam Kehidupan Modern
+
+                                Di era digital seperti sekarang, jaringan komputer telah menjadi tulang punggung bagi hampir setiap aspek kehidupan kita. Mulai dari mengirim pesan, streaming video, hingga transaksi perbankan online, semuanya bergantung pada jaringan komputer.</p>
+                            <a href="blogpage.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 ">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->                
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/network.jpg" alt="networking" width="360px" height="200px" class="w-full">
+                        <div class="py-7 px-6">
+                            <h3 class="pb-4">
+                                <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Artifical Intelligence</a>
+                            </h3>
+                            <p class="font-medium text-base mb-4 text-justify">"Kecerdasan Buatan (AI) terus berkembang dan mengubah cara kita bekerja, berkomunikasi, dan berinovasi. Dari machine learning hingga otomatisasi cerdas, AI menghadirkan solusi efisien di berbagai bidang. Di blog ini, saya membahas tren, teknologi, dan penerapan AI untuk membantu Anda memahami serta memanfaatkannya dalam kehidupan dan industri."</p>
+                            <a href="blogpage.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 ">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- sertification section start  -->
+    <section id="certifikat" class="pt-36 pb-16">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-l-xl mx-auto text-center mb-16 sm:text-4xl lg:text-5xl">
+                    <h4 class="font-semibold text-lg text-primary mb-2 mt-10">Sertifikat</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">Sertifikasi Terbaru</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg text-center">"Sertifikasi adalah bukti kompetensi dan kualifikasi yang menunjukkan kemampuan dan keahlian seseorang dalam bidang tertentu."</p>
+                </div>
+            </div>
+            <!-- certifikat 1      -->
+            <div class="flex flex-wrap">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="src/img/botcampbsi.jpg" alt="certifikat1" width="360px" height="200px" class="w-full">
+                    <div class="py-7 px-6">
+                        <h3 class="pb-4 text-primary font-semibold text-xl">
+                            Sertifikat IT Bootcamp
+                        </h3>
+                        <p class="font-medium text-base mb-4 text-justify">Kegiatan yang diadakan oleh Universitas Bina Sarana Informatika, dengan tema pelatihan sofware development. Dikegiatan ini saya dan team membuat website untuk penjualan tiket sebuah wahana bermain.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- certifikat2  -->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="src/img/jwd.jpg" alt="certifikat1" width="360px" height="200px" class="w-full">
+                    <div class="py-7 px-6">
+                        <h3 class="pb-4 text-primary font-semibold text-xl">
+                            Sertifikat Kominfo Junior Web Developer
+                        </h3>
+                        <p class="font-medium text-base mb-4 text-justify">Kegiatan yang diadakan oleh BPSDMP Jakarta yang bekerja sama dengan Digitalent dan Politeknik Negri Jakarta, dengan tema pelatihan Junior Web Developer. Dikegiatan ini saya membuat website informasi wisata disebuah daerah.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- certifikat3  -->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="src/img/jna.jpg" alt="certifikat1" width="360px" height="200px" class="w-full">
+                    <div class="py-7 px-6">
+                        <h3 class="pb-4 text-primary font-semibold text-xl">
+                            Sertifikat Pelatihan Junior Network Administrator
+                        </h3>
+                        <p class="font-medium text-base mb-4 text-justify">Kegiatan yang diadakan oleh BPPTIK Kementerian Komunikasi dan Informatika, dengan tema pelatihan Junior Network Administrator. Dikegiatan ini saya membuat skema sederhana jaringan komputer yang saling terkoneksi.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- certifikat4  -->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="src/img/bnspjwd2024.jpg" alt="certifikat1" class="w-full">
+                    <div class="py-4 px-6">
+                        <h3 class="pb-4 text-primary font-semibold text-xl">
+                            Sertifikat Kompetensi BNSP Junior Web Developer
+                        </h3>
+                        <p class="font-medium text-base mb-4 text-justify">Kegiatan yang diadakan oleh Digitalent dimana peserta yang lulus pelatihan Junior Web Developer akan mendapatkan sertifikat kompetensi dari BNSP dan diuji lagi oleh pihak LSP untuk kelayakan kompeten atau tidak kompeten.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- sertification section End -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container mx-auto px-4 py-8">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center">
+                    <p class="text-primary text-lg font-semibold mb-2">Contact</p>
+                    <h1 class="text-4xl font-bold mb-2">Hubungi Kami</h1>
+                    <p class="mb-8">Kirimkan pesan kepada saya dengen mengisi form yang ada dibawah.</p>
+                </div>
+                
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-teal-600">Nama</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-1 block w-full px-3 py-2 bg-white border border-primary rounded-md text-gray-900">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-teal-600">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="mt-1 block w-full px-3 py-2 bg-white border border-primary rounded-md text-gray-900">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-teal-600">Pesan</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="mt-1 block w-full px-3 py-2 bg-white border border-primary rounded-md text-gray-900"></textarea>
+                    </div>
+                    
+                    <button type="submit" 
+                        class="w-full py-3 px-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-lg transition-colors">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact section end  -->
+
+    <!-- footer section strat  -->
+    <footer class="bg-dark pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/3">
+                    <h2 class="font-bold text-4xl text-white mb-5">Parman</h2>
+                    <h3>suparman0921@gmail.com</h3>
+                
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="block text-base text-slate-300 hover:text-primary mb-3">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block text-base text-slate-300 hover:text-primary mb-3">Networking</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block text-base text-slate-300 hover:text-primary mb-3">Artifical Intelligence</a>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan </h3>
+                    <ul>
+                        <li>
+                            <a href="#home" class="block text-base text-slate-300 hover:text-primary mb-3">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="block text-base text-slate-300 hover:text-primary mb-3">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#Portofolio" class="block text-base text-slate-300 hover:text-primary mb-3">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="block text-base text-slate-300 hover:text-primary mb-3">Blog</a>
+                        </li>
+                        <li>
+                            <a href="index.html#certifikat" class="block text-base text-slate-300 hover:text-primary mb-3">Certifikat</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="block text-base text-slate-300 hover:text-primary mb-3">Contact</a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="w-full pt-10 border-t border-slate-700">
+                <div class="flex items-center justify-center mb-5">
+                    <!-- You Tube -->
+                    <a href="https://www.youtube.com/@GenZetDev" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-white text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/parmanman_/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                    </a>
+                    <!-- Tik Tok -->
+                    <a href="https://www.tiktok.com/@genzdev" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="20" class="fill-current"
+                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 449.45 515.38"><title>Tik-Tok</title><path fill-rule="nonzero" d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"/></svg>
+
+                    </a>
+
+                </div>
+                <div class="w-full text-center text-slate-300 font-medium">
+                    <p>&copy; 2025 Parman. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer section End  -->
+
+<script src="/src/js/script.js"></script>
+</body>
+</html>
